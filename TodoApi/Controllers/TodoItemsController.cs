@@ -114,7 +114,7 @@ namespace TodoApi.Controllers
         private static TodoItemDTO ItemToDTO(TodoItem todoItem) =>
             new TodoItemDTO
             {
-                Id = TodoItem.Id,
+                Id = todoItem.Id,
                 Name = todoItem.Name,
                 IsComplete = todoItem.IsComplete
             };
